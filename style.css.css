@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    padding: 100px 20px;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.daftar-produk, .produk-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+article, .produk-detail, .form-kontak {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+article img, .produk-detail img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 15px 0 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #6d4c41;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #5d4037;
+}
+
+footer {
+    background-color: #4e342e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .daftar-produk {
+        grid-template-columns: 1fr;
+    }
+}
